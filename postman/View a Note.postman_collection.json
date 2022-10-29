@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "19b00d89-94dc-490f-b216-82bb4e460e86",
+		"name": "View a Note",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045974"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/getNote/:noteId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQHRlc3QuY29tIiwidXNlcklkIjoiNjM1YjA5MjYzNTg5ZmI5NTdmZGY1MDc4IiwiaWF0IjoxNjY3MDM1NjIzLCJleHAiOjE2NjcwMzkyMjN9.NM6NpaZVWldX54uAdiv4hHf2g6BE45nyHCmWX7eEvQg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getNote/635ce384782a2d70d86aad5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getNote",
+						"635ce384782a2d70d86aad5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/getNote/:noteId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getNote/635ce384782a2d70d86aad5b",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getNote",
+								"635ce384782a2d70d86aad5b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "330"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14a-OHl0P/q4uMkSpUgQDKcCtqGGws8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:33:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Note Found!\",\n    \"note\": {\n        \"_id\": \"635ce384782a2d70d86aad5b\",\n        \"title\": \"CSC323\",\n        \"text\": \"Object Oriented Programming\",\n        \"tag\": [\n            \"#programming\",\n            \"#OOD\",\n            \"#uni\",\n            \"#study\"\n        ],\n        \"categoryId\": \"635ce006b086e02047aa8d72\",\n        \"creator\": \"635b084d3589fb957fdf5075\",\n        \"createdAt\": \"2022-10-29T08:25:40.037Z\",\n        \"updatedAt\": \"2022-10-29T08:25:40.037Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "ee46f9e5-b02f-48bb-a33a-afa2ca3caa34",
+		"name": "View Notes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045974"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/getNotes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQHRlc3QuY29tIiwidXNlcklkIjoiNjM1YjA5MjYzNTg5ZmI5NTdmZGY1MDc4IiwiaWF0IjoxNjY3MDM1NjIzLCJleHAiOjE2NjcwMzkyMjN9.NM6NpaZVWldX54uAdiv4hHf2g6BE45nyHCmWX7eEvQg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getNotes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getNotes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/getNotes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getNotes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getNotes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1822"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"71e-aq1sgk/rCA6qw4cpcFe5xCLEU/U\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:35:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"All Notes Founds\",\n    \"notes\": [\n        {\n            \"_id\": \"635ce384782a2d70d86aad5b\",\n            \"title\": \"CSC323\",\n            \"text\": \"Object Oriented Programming\",\n            \"tag\": [\n                \"#programming\",\n                \"#OOD\",\n                \"#uni\",\n                \"#study\"\n            ],\n            \"categoryId\": \"635ce006b086e02047aa8d72\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:25:40.037Z\",\n            \"updatedAt\": \"2022-10-29T08:25:40.037Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635ce3d6782a2d70d86aad5e\",\n            \"title\": \"EEN473\",\n            \"text\": \"Special Topics in Electrical Engineering\",\n            \"tag\": [\n                \"#5G\",\n                \"#engineering\",\n                \"#uni\",\n                \"#study\"\n            ],\n            \"categoryId\": \"635ce006b086e02047aa8d72\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:27:02.024Z\",\n            \"updatedAt\": \"2022-10-29T08:27:02.024Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635ce41a782a2d70d86aad61\",\n            \"title\": \"CSC433\",\n            \"text\": \"Software Engineering\",\n            \"tag\": [\n                \"#waterfall\",\n                \"#uni\",\n                \"#programming\"\n            ],\n            \"categoryId\": \"635ce006b086e02047aa8d72\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:28:10.341Z\",\n            \"updatedAt\": \"2022-10-29T09:21:10.714Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"635ce6fa0ecf43a7cabc616d\",\n            \"title\": \"private students\",\n            \"text\": \"Sasha, Julia, Charbel, Amani\",\n            \"tag\": [\n                \"#music\",\n                \"#work\",\n                \"#private\"\n            ],\n            \"categoryId\": \"635ce03fb086e02047aa8d75\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:40:26.285Z\",\n            \"updatedAt\": \"2022-10-29T08:40:26.285Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635ce73f0ecf43a7cabc6170\",\n            \"title\": \"conservatory students\",\n            \"text\": \"total work hours: 5\",\n            \"tag\": [\n                \"#music\",\n                \"#work\",\n                \"#cons\"\n            ],\n            \"categoryId\": \"635ce03fb086e02047aa8d75\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:41:35.152Z\",\n            \"updatedAt\": \"2022-10-29T08:41:35.152Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635ce7880ecf43a7cabc6173\",\n            \"title\": \"Expenses\",\n            \"text\": \"this month i have bought cat litter and cat food\",\n            \"tag\": [\n                \"#expenses\"\n            ],\n            \"categoryId\": \"635ce07cb086e02047aa8d78\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:42:48.104Z\",\n            \"updatedAt\": \"2022-10-29T08:42:48.104Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

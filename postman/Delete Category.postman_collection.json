@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "d95dd087-8771-4a45-b48a-3fc85cdbeba4",
+		"name": "Delete Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045974"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/deleteCategory/:categoryId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJ1c2VySWQiOiI2MzViMDg0ZDM1ODlmYjk1N2ZkZjUwNzUiLCJpYXQiOjE2NjcwMzA4MjQsImV4cCI6MTY2NzAzNDQyNH0.DHy7rB57NN5D1um26FvVXALjplKSPP4CpxCdjn04UOo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteCategory/635cec49a8074d455454981a",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteCategory",
+						"635cec49a8074d455454981a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/deleteCategory/:categoryId",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/deleteCategory/635cec49a8074d455454981a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deleteCategory",
+								"635cec49a8074d455454981a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"49-9XnMaK3QRBDhv5iWmWQWXRcCb3E\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:03:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Category Deleted in addition to all notes pertaining to it!\"\n}"
+				}
+			]
+		}
+	]
+}

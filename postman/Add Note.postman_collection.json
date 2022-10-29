@@ -1,0 +1,419 @@
+{
+	"info": {
+		"_postman_id": "43193d9a-0887-4d78-8b5e-bab7a47fc13e",
+		"name": "Add Note",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045974"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/addNote/:categoryId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJ1c2VySWQiOiI2MzViMDg0ZDM1ODlmYjk1N2ZkZjUwNzUiLCJpYXQiOjE2NjcwMzA4MjQsImV4cCI6MTY2NzAzNDQyNH0.DHy7rB57NN5D1um26FvVXALjplKSPP4CpxCdjn04UOo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"note pertaining category\",\r\n    \"text\": \"this note should be deleted along with its category deletion\",\r\n    \"tag\": [\"#deletion\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/addNote/635cec49a8074d455454981a",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addNote",
+						"635cec49a8074d455454981a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/addNote/:categoryId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"CSC423\",\r\n    \"text\": \"Software Engineering\",\r\n    \"tag\": [\"#programming\", \"#waterfall\", \"#uni\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/addNote/635ce006b086e02047aa8d72",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addNote",
+								"635ce006b086e02047aa8d72"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "334"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14e-T+gfJEaqTmW4x+Lm+RJBG2PKfVA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 08:28:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Note Created Successfully\",\n    \"note\": {\n        \"title\": \"CSC423\",\n        \"text\": \"Software Engineering\",\n        \"tag\": [\n            \"#programming\",\n            \"#waterfall\",\n            \"#uni\"\n        ],\n        \"categoryId\": \"635ce006b086e02047aa8d72\",\n        \"creator\": \"635b084d3589fb957fdf5075\",\n        \"_id\": \"635ce41a782a2d70d86aad61\",\n        \"createdAt\": \"2022-10-29T08:28:10.341Z\",\n        \"updatedAt\": \"2022-10-29T08:28:10.341Z\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "localhost:8080/addNote/:categoryId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"CSC423\",\r\n    \"text\": \"Software Engineering\",\r\n    \"tag\": [\"#programming\", \"#waterfall\", \"#uni\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/addNote/635ce006b086e02047aa8d72",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addNote",
+								"635ce006b086e02047aa8d72"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "134"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"86-0Ye3z84qCcjOgHY2BcZvcfF6N3g\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 08:34:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Input Validation Failed!\",\n    \"data\": [\n        {\n            \"value\": \"CSC423\",\n            \"msg\": \"Note title already exists\",\n            \"param\": \"title\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/addNote/:categoryId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"\",\r\n    \"text\": \"Software Engineering\",\r\n    \"tag\": [\"#programming\", \"#waterfall\", \"#uni\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/addNote/635ce006b086e02047aa8d72",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addNote",
+								"635ce006b086e02047aa8d72"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "186"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ba-p7O27c0ebnXANhHtkgK1sCWUToU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 08:37:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Input Validation Failed!\",\n    \"data\": [\n        {\n            \"value\": \"\",\n            \"msg\": \"Note title should contain a minimum of one character and a maximum of 30 characters\",\n            \"param\": \"title\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/addNote/:categoryId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"private students\",\r\n    \"text\": \"Sasha, Julia, Charbel, Amani\",\r\n    \"tag\": [\"#music\", \"#work\", \"#private\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/addNote/635ce03fb086e02047aa8d75",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addNote",
+								"635ce03fb086e02047aa8d75"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "345"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"159-YGPNHw+A7fAg+32ENSI16v470UU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 08:40:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Note Created Successfully\",\n    \"note\": {\n        \"title\": \"private students\",\n        \"text\": \"Sasha, Julia, Charbel, Amani\",\n        \"tag\": [\n            \"#music\",\n            \"#work\",\n            \"#private\"\n        ],\n        \"categoryId\": \"635ce03fb086e02047aa8d75\",\n        \"creator\": \"635b084d3589fb957fdf5075\",\n        \"_id\": \"635ce6fa0ecf43a7cabc616d\",\n        \"createdAt\": \"2022-10-29T08:40:26.285Z\",\n        \"updatedAt\": \"2022-10-29T08:40:26.285Z\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "localhost:8080/addNote/:categoryId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"salary\",\r\n    \"text\": \"private students have not paid for this month yet\",\r\n    \"tag\": [\"#salary\", \"#private\", \"#music\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/addNote/635ce07cb086e02047aa8d78",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addNote",
+								"635ce07cb086e02047aa8d78"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "358"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"166-LO7joJYDuqWc2Z39V0FRudUsLtE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 08:43:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Note Created Successfully\",\n    \"note\": {\n        \"title\": \"salary\",\n        \"text\": \"private students have not paid for this month yet\",\n        \"tag\": [\n            \"#salary\",\n            \"#private\",\n            \"#music\"\n        ],\n        \"categoryId\": \"635ce07cb086e02047aa8d78\",\n        \"creator\": \"635b084d3589fb957fdf5075\",\n        \"_id\": \"635ce7b30ecf43a7cabc6176\",\n        \"createdAt\": \"2022-10-29T08:43:31.714Z\",\n        \"updatedAt\": \"2022-10-29T08:43:31.714Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}

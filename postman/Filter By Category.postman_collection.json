@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "da199cfd-7312-4b5c-837d-5317e366c74b",
+		"name": "Filter By Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045974"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/getCategory/:categoryId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJ1c2VySWQiOiI2MzViMDg0ZDM1ODlmYjk1N2ZkZjUwNzUiLCJpYXQiOjE2NjcwMzQ0NzAsImV4cCI6MTY2NzAzODA3MH0.2XbRivQU93CvOAst-ycZfVhcJ04m74vRh_Ih98MUI08",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getCategory/635ce07cb086e02047aa8d78",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getCategory",
+						"635ce07cb086e02047aa8d78"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/getCategory/:categoryId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getCategory/635ce006b086e02047aa8d72",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getCategory",
+								"635ce006b086e02047aa8d72"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "971"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3cb-qhLl9W40PqktyxZn/+l87ynimbA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:23:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Notes pertaining to this category are found\",\n    \"categoryNotes\": [\n        {\n            \"_id\": \"635ce384782a2d70d86aad5b\",\n            \"title\": \"CSC323\",\n            \"text\": \"Object Oriented Programming\",\n            \"tag\": [\n                \"#programming\",\n                \"#OOD\",\n                \"#uni\",\n                \"#study\"\n            ],\n            \"categoryId\": \"635ce006b086e02047aa8d72\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:25:40.037Z\",\n            \"updatedAt\": \"2022-10-29T08:25:40.037Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635ce3d6782a2d70d86aad5e\",\n            \"title\": \"EEN473\",\n            \"text\": \"Special Topics in Electrical Engineering\",\n            \"tag\": [\n                \"#5G\",\n                \"#engineering\",\n                \"#uni\",\n                \"#study\"\n            ],\n            \"categoryId\": \"635ce006b086e02047aa8d72\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:27:02.024Z\",\n            \"updatedAt\": \"2022-10-29T08:27:02.024Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635ce41a782a2d70d86aad61\",\n            \"title\": \"CSC433\",\n            \"text\": \"Software Engineering\",\n            \"tag\": [\n                \"#waterfall\",\n                \"#uni\",\n                \"#programming\"\n            ],\n            \"categoryId\": \"635ce006b086e02047aa8d72\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:28:10.341Z\",\n            \"updatedAt\": \"2022-10-29T09:21:10.714Z\",\n            \"__v\": 1\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/getCategory/:categoryId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getCategory/635ce03fb086e02047aa8d75",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getCategory",
+								"635ce03fb086e02047aa8d75"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "666"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"29a-XFQAHcaFkiTu8ZYnSJTXHFw0gyU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:24:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Notes pertaining to this category are found\",\n    \"categoryNotes\": [\n        {\n            \"_id\": \"635ce6fa0ecf43a7cabc616d\",\n            \"title\": \"private students\",\n            \"text\": \"Sasha, Julia, Charbel, Amani\",\n            \"tag\": [\n                \"#music\",\n                \"#work\",\n                \"#private\"\n            ],\n            \"categoryId\": \"635ce03fb086e02047aa8d75\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:40:26.285Z\",\n            \"updatedAt\": \"2022-10-29T08:40:26.285Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635ce73f0ecf43a7cabc6170\",\n            \"title\": \"conservatory students\",\n            \"text\": \"total work hours: 5\",\n            \"tag\": [\n                \"#music\",\n                \"#work\",\n                \"#cons\"\n            ],\n            \"categoryId\": \"635ce03fb086e02047aa8d75\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:41:35.152Z\",\n            \"updatedAt\": \"2022-10-29T08:41:35.152Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/getCategory/:categoryId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getCategory/635ce07cb086e02047aa8d78",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getCategory",
+								"635ce07cb086e02047aa8d78"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "370"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"172-uEdFHvXBe8uU1o1QLt2XJ5jD+bU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:25:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Notes pertaining to this category are found\",\n    \"categoryNotes\": [\n        {\n            \"_id\": \"635ce7880ecf43a7cabc6173\",\n            \"title\": \"Expenses\",\n            \"text\": \"this month i have bought cat litter and cat food\",\n            \"tag\": [\n                \"#expenses\"\n            ],\n            \"categoryId\": \"635ce07cb086e02047aa8d78\",\n            \"creator\": \"635b084d3589fb957fdf5075\",\n            \"createdAt\": \"2022-10-29T08:42:48.104Z\",\n            \"updatedAt\": \"2022-10-29T08:42:48.104Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

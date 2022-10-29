@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "67ad0dd6-0d4d-4b82-a81a-5c978b5d5013",
+		"name": "Add Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045974"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/addCategory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJ1c2VySWQiOiI2MzViMDg0ZDM1ODlmYjk1N2ZkZjUwNzUiLCJpYXQiOjE2NjcwMzA4MjQsImV4cCI6MTY2NzAzNDQyNH0.DHy7rB57NN5D1um26FvVXALjplKSPP4CpxCdjn04UOo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"new category\",\r\n    \"description\": \"to be deleted\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/addCategory",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addCategory"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/addCategory",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Money Management\",\r\n    \"description\": \"All expenses listed in details, in addition to salary\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/addCategory",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addCategory"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "194"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c2-Vn3YK8MWQ/bXUzTAswdyeVKkeqg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 08:12:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Category Created Successfully\",\n    \"category\": {\n        \"title\": \"Money Management\",\n        \"description\": \"All expenses listed in details, in addition to salary\",\n        \"_id\": \"635ce07cb086e02047aa8d78\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "localhost:8080/addCategory",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Money Management\",\r\n    \"description\": \"salary\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/addCategory",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addCategory"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "135"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"87-GbDGTEb6n1aAqL3QLIRYt5X3hTk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 08:14:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Validation Failed\",\n    \"data\": [\n        {\n            \"value\": \"Money Management\",\n            \"msg\": \"Category already exists\",\n            \"param\": \"title\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/addCategory",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Money Management Money Management Money Management Money Management Money Management Money Management\",\r\n    \"description\": \"salary\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/addCategory",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addCategory"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "284"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11c-1mOoM0tY7M4TzD8ftRfx+J3srDo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 08:14:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Validation Failed\",\n    \"data\": [\n        {\n            \"value\": \"Money Management Money Management Money Management Money Management Money Management Money Management\",\n            \"msg\": \"Category title should contain a minimum of one character and a maximum of 30 characters\",\n            \"param\": \"title\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/addCategory",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Money Management \",\r\n    \"description\": \"Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/addCategory",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addCategory"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "866"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"362-1QHj+470GBDyEOmlX1D5xDQq7lI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 08:15:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Validation Failed\",\n    \"data\": [\n        {\n            \"value\": \"Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management Money Management\",\n            \"msg\": \"Category should contain no more than 100 characters\",\n            \"param\": \"description\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

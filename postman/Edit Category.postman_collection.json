@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "00bdf23f-58df-4b06-9f82-6bbb93381cd0",
+		"name": "Edit Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045974"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/editCategory/:categoryId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJ1c2VySWQiOiI2MzViMDg0ZDM1ODlmYjk1N2ZkZjUwNzUiLCJpYXQiOjE2NjcwMzQ0NzAsImV4cCI6MTY2NzAzODA3MH0.2XbRivQU93CvOAst-ycZfVhcJ04m74vRh_Ih98MUI08",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"University\",\r\n    \"description\": \"Can I add a category using some other category's name?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/editCategory/635ce03fb086e02047aa8d75",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"editCategory",
+						"635ce03fb086e02047aa8d75"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/editCategory/:categoryId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Music Work\",\r\n    \"description\": \"schedule of all students, in addition to some notes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/editCategory/635ce03fb086e02047aa8d75",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"editCategory",
+								"635ce03fb086e02047aa8d75"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "186"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ba-iIKmGnJTJGXVpFWbjymJIo7xBZg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:06:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Category updated successfully\",\n    \"category\": {\n        \"_id\": \"635ce03fb086e02047aa8d75\",\n        \"title\": \"Music Work\",\n        \"description\": \"schedule of all students, in addition to some notes\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "localhost:8080/editCategory/:categoryId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"\",\r\n    \"description\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/editCategory/635ce03fb086e02047aa8d75",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"editCategory",
+								"635ce03fb086e02047aa8d75"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "321"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"141-46vUgU302ECZwuPsqieLSLp7EIA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:15:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Validation Error\",\n    \"data\": [\n        {\n            \"value\": \"\",\n            \"msg\": \"Category title should contain a minimum of one character and a maximum of 30 characters\",\n            \"param\": \"title\",\n            \"location\": \"body\"\n        },\n        {\n            \"value\": \"\",\n            \"msg\": \"Category should not contain less than 1 character or more than 100 characters\",\n            \"param\": \"description\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/editCategory/:categoryId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"University\",\r\n    \"description\": \"Can I add a category using some other category's name?\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/editCategory/635ce03fb086e02047aa8d75",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"editCategory",
+								"635ce03fb086e02047aa8d75"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "128"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"80-odS3Gji9pJNSBrO+8n1CKGWdQtg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:16:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Validation Error\",\n    \"data\": [\n        {\n            \"value\": \"University\",\n            \"msg\": \"Category already exists\",\n            \"param\": \"title\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

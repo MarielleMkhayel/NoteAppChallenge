@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "9a3b4de0-f124-48d4-92f2-0f6743d74ecb",
+		"name": "Sort By Update Date",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045974"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/sortByUpdateDate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQHRlc3QuY29tIiwidXNlcklkIjoiNjM1YjA5MjYzNTg5ZmI5NTdmZGY1MDc4IiwiaWF0IjoxNjY3MDM1NjIzLCJleHAiOjE2NjcwMzkyMjN9.NM6NpaZVWldX54uAdiv4hHf2g6BE45nyHCmWX7eEvQg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/sortByUpdateDate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sortByUpdateDate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/sortByUpdateDate",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sortByUpdateDate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sortByUpdateDate"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "430"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ae-SXQy3ZXTr8G/7tuQNuh6DoBxEwg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:32:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Notes Sorted Successfully\",\n    \"sortedNotes\": [\n        {\n            \"title\": \"CSC433\",\n            \"updatedAt\": \"2022-10-29T09:21:10.714Z\"\n        },\n        {\n            \"title\": \"Expenses\",\n            \"updatedAt\": \"2022-10-29T08:42:48.104Z\"\n        },\n        {\n            \"title\": \"conservatory students\",\n            \"updatedAt\": \"2022-10-29T08:41:35.152Z\"\n        },\n        {\n            \"title\": \"private students\",\n            \"updatedAt\": \"2022-10-29T08:40:26.285Z\"\n        },\n        {\n            \"title\": \"EEN473\",\n            \"updatedAt\": \"2022-10-29T08:27:02.024Z\"\n        },\n        {\n            \"title\": \"CSC323\",\n            \"updatedAt\": \"2022-10-29T08:25:40.037Z\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

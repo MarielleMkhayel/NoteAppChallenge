@@ -1,0 +1,486 @@
+{
+	"info": {
+		"_postman_id": "169d9332-8065-49b0-9cb0-676dca3bc250",
+		"name": "Search By Tags",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045974"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/searchByTag",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQHRlc3QuY29tIiwidXNlcklkIjoiNjM1YjA5MjYzNTg5ZmI5NTdmZGY1MDc4IiwiaWF0IjoxNjY3MDQ3OTk2LCJleHAiOjE2NjcwNTE1OTZ9.Z91bPjZis0whSKBrmiiZV4MowHKZpnRrBcNkN7DdF1A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"keyword\": [\"#waterfall\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/searchByTag",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchByTag"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/searchByTag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"keyword\": [\"#music\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/searchByTag",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"searchByTag"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "181"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b5-XQCGp8oOs6IkE+SBmYbUMw8oJcw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:27:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Search By Tag Done\",\n    \"notesWithTag\": [\n        {\n            \"title\": \"private students\",\n            \"tag\": [\n                \"#music\",\n                \"#work\",\n                \"#private\"\n            ]\n        },\n        {\n            \"title\": \"conservatory students\",\n            \"tag\": [\n                \"#music\",\n                \"#work\",\n                \"#cons\"\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/searchByTag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"keyword\": [\"#uni\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/searchByTag",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"searchByTag"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "240"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f0-eoi5C1XeX6IUA6hdDAmlQIpPSJc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:28:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Search By Tag Done\",\n    \"notesWithTag\": [\n        {\n            \"title\": \"CSC323\",\n            \"tag\": [\n                \"#programming\",\n                \"#OOD\",\n                \"#uni\",\n                \"#study\"\n            ]\n        },\n        {\n            \"title\": \"EEN473\",\n            \"tag\": [\n                \"#5G\",\n                \"#engineering\",\n                \"#uni\",\n                \"#study\"\n            ]\n        },\n        {\n            \"title\": \"CSC433\",\n            \"tag\": [\n                \"#waterfall\",\n                \"#uni\",\n                \"#programming\"\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/searchByTag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"keyword\": [\"#uni\", \"#programming\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/searchByTag",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"searchByTag"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "240"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f0-eoi5C1XeX6IUA6hdDAmlQIpPSJc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:28:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Search By Tag Done\",\n    \"notesWithTag\": [\n        {\n            \"title\": \"CSC323\",\n            \"tag\": [\n                \"#programming\",\n                \"#OOD\",\n                \"#uni\",\n                \"#study\"\n            ]\n        },\n        {\n            \"title\": \"EEN473\",\n            \"tag\": [\n                \"#5G\",\n                \"#engineering\",\n                \"#uni\",\n                \"#study\"\n            ]\n        },\n        {\n            \"title\": \"CSC433\",\n            \"tag\": [\n                \"#waterfall\",\n                \"#uni\",\n                \"#programming\"\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/searchByTag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"keyword\": [\"#programming\", \"#uni\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/searchByTag",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"searchByTag"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "240"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f0-eoi5C1XeX6IUA6hdDAmlQIpPSJc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:29:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Search By Tag Done\",\n    \"notesWithTag\": [\n        {\n            \"title\": \"CSC323\",\n            \"tag\": [\n                \"#programming\",\n                \"#OOD\",\n                \"#uni\",\n                \"#study\"\n            ]\n        },\n        {\n            \"title\": \"EEN473\",\n            \"tag\": [\n                \"#5G\",\n                \"#engineering\",\n                \"#uni\",\n                \"#study\"\n            ]\n        },\n        {\n            \"title\": \"CSC433\",\n            \"tag\": [\n                \"#waterfall\",\n                \"#uni\",\n                \"#programming\"\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/searchByTag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"keyword\": [\"#programming\", \"#uni\", \"#study\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/searchByTag",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"searchByTag"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "240"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f0-eoi5C1XeX6IUA6hdDAmlQIpPSJc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:30:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Search By Tag Done\",\n    \"notesWithTag\": [\n        {\n            \"title\": \"CSC323\",\n            \"tag\": [\n                \"#programming\",\n                \"#OOD\",\n                \"#uni\",\n                \"#study\"\n            ]\n        },\n        {\n            \"title\": \"EEN473\",\n            \"tag\": [\n                \"#5G\",\n                \"#engineering\",\n                \"#uni\",\n                \"#study\"\n            ]\n        },\n        {\n            \"title\": \"CSC433\",\n            \"tag\": [\n                \"#waterfall\",\n                \"#uni\",\n                \"#programming\"\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "localhost:8080/searchByTag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"keyword\": [\"#waterfall\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/searchByTag",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"searchByTag"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "111"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6f-3uGXdbvntjMYTBsG4glyX4ypDPg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:30:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Search By Tag Done\",\n    \"notesWithTag\": [\n        {\n            \"title\": \"CSC433\",\n            \"tag\": [\n                \"#waterfall\",\n                \"#uni\",\n                \"#programming\"\n            ]\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

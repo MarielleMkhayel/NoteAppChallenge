@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "a6633532-2d7d-4fc7-89b2-5c184c77e897",
+		"name": "View Categories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045974"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/getCategories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQHRlc3QuY29tIiwidXNlcklkIjoiNjM1YjA5MjYzNTg5ZmI5NTdmZGY1MDc4IiwiaWF0IjoxNjY3MDM1NjIzLCJleHAiOjE2NjcwMzkyMjN9.NM6NpaZVWldX54uAdiv4hHf2g6BE45nyHCmWX7eEvQg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getCategories",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getCategories"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/getCategories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getCategories",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getCategories"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "472"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1d8-BiLInGZi0ThKSDRRY/P6Vn7juMo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Oct 2022 09:35:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"All Categories Founds\",\n    \"categories\": [\n        {\n            \"_id\": \"635ce006b086e02047aa8d72\",\n            \"title\": \"University\",\n            \"description\": \"All required books, documents and previous exams, in addition to some notes\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635ce03fb086e02047aa8d75\",\n            \"title\": \"Music Work\",\n            \"description\": \"List of all students, in addition to schedule\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635ce07cb086e02047aa8d78\",\n            \"title\": \"Money Management\",\n            \"description\": \"All expenses listed in details, in addition to salary\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
